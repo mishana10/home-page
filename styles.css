@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 7px;
+    padding-right: 5px;
+    max-width: 375px;
+    background-color: #FFFDFA;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+.menu {
+    min-height: 600px;
+    width: 50%;
+    position: absolute;
+    top: 5px;
+    right: -25px;
+    background-color: #FFFDFA;
+}
+
+#btn {
+    border: none;
+    background-color: #FFFDFA;
+}
+
+.hide {
+    display: none;
+}
+
+.logo {
+    padding: 20px 10px;
+}
+
+.hamburger-menu {
+    height: 20%;
+}
+
+.menu img {
+    padding: 20px;
+    margin-left: 100px;
+}
+
+#close-btn {
+    border: none;
+    background-color: #FFFDFA;
+    cursor: pointer;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list ul li {
+    padding: 15px;
+    list-style-type: none;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: #00001A;
+    transition: 0.3s ease-out;
+}
+
+.menu-list ul li a:hover {
+    text-decoration: none;
+    color: #F15E50;
+}
+
+.introduction {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    ;
+    margin-left: 15px;
+}
+
+.main-img {
+    width: 100%;
+    align-items: center;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.introduction h1 {
+    padding: 20px 0;
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+}
+
+.introduction p {
+    line-height: 2rem;
+    opacity: 0.6;
+}
+
+.btn-read {
+    margin: 15px 0;
+    padding: 15px 30px;
+    font-size: 1rem;
+    background-color: #F15E50;
+    color: #FFFDFA;
+    border: none;
+    letter-spacing: 5px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.new {
+    background-color: #00001A;
+    color: #FFFDFA;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.new h1 {
+    color: #E9AB53;
+    padding: 20px;
+}
+
+.example {
+    padding: 0px 20px;
+    cursor: pointer;
+}
+
+.example h2 {
+    padding: 10px 0;
+    transition: all 0.3s ease-out;
+}
+
+.example h2:hover {
+    color: #E9AB53;
+}
+
+.example p {
+    opacity: 0.6;
+}
+
+.line {
+    height: 1px;
+    background-color: #FFFDFA;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.last-ex {
+    padding-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 40px;
+}
+
+.article {
+    display: flex;
+}
+
+.article img {
+    width: 8rem;
+    height: 50%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.picture-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 15px;
+}
+
+.article h1 {
+    opacity: 0.3;
+}
+
+.article h3 {
+    font-weight: 800;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+.article h3:hover {
+    color: #F15E50;
+}
+
+.article p {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 376px) {
+    body {
+        width: 1440px;
+    }
+    
+    .hamburger-menu {
+        display: none;
+    }
+
+    .logo {
+        padding-top: 30px;
+    }
+
+    .menu-list {
+        display: flex;
+    }
+
+    .menu-list ul li {
+        padding-left: 40px;
+    }
+
+    .nav-bar {
+        min-width: 376px;
+        justify-content: space-between;
+    }
+
+    .desktop-layout {
+        display: flex;
+    }
+
+    .introduction {
+        width: 100%;
+    }
+    
+    .main-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .intro-text1 {
+        display: flex;
+        padding: 10px;
+    }
+
+    .intro-text2 {
+        width: 90%;
+    }
+    
+    .introduction h1 {
+        line-height: 3rem;
+        align-self: flex-end;
+    }
+
+    .introduction p {
+        margin-right: 70px;
+        align-self: flex-end;
+    }
+
+    .new {
+    width: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+    align-self: flex-start;
+    padding-bottom: 35px;
+    }
+
+    .footer {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .article {
+        width: 33%;
+        padding: 20px;
+    }
+
+    .article img {
+        width: 10rem;
+        height: 60%;
+    }
+
+    
+}
+
